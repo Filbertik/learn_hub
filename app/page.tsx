@@ -4,6 +4,8 @@ const HomePage = () => {
   return (
     <section className="mx-auto flex min-h-[calc(100vh-145px)] max-w-7xl items-center px-6 py-16">
       <div>
+        <p>Available courses: {courses.length}</p>
+
         <p className="mb-4 text-sm font-semibold uppercase tracking-wider text-indigo-600">
           LearnHub
         </p>
