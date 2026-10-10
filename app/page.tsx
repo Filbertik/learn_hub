@@ -1,3 +1,5 @@
+import { courses } from "@/data/courses";
+
 const HomePage = () => {
   return (
     <section className="mx-auto flex min-h-[calc(100vh-145px)] max-w-7xl items-center px-6 py-16">
