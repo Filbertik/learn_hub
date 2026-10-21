@@ -21,7 +21,7 @@ export async function generateMetadata({
 
   if (!course || !lesson) {
     return {
-      title: "Урок не знайдено | LearnHub",
+      title: "Урок не знайдено! | LearnHub",
     };
   }
 
