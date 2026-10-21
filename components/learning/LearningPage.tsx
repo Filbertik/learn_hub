@@ -205,7 +205,7 @@ export default function LearningPage({
                 </span>
 
                 {isCurrentLessonCompleted
-                  ? "Позначити незавершеним"
+                  ? "Позначити  не завершеним"
                   : "Позначити як завершений"}
               </button>
             </div>
@@ -331,7 +331,7 @@ export default function LearningPage({
                   {isActive && (
                     <span
                       className="mt-1 text-xs font-semibold text-blue-700"
-                      aria-label="Поточний урок"
+                      aria-label="Поточний урок - "
                     >
                       ▶
                     </span>
