@@ -17,14 +17,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="bg-slate-50 text-slate-900 antialiased">
-        <AuthProvider></AuthProvider>
-        <div className="flex min-h-screen flex-col">
-          <Header />
+        <AuthProvider>
+          <div className="flex min-h-screen flex-col">
+            <Header />
 
-          <main className="flex-1">{children}</main>
+            <main className="flex-1">{children}</main>
 
-          <Footer />
-        </div>
+            <Footer />
+          </div>
+        </AuthProvider>
       </body>
     </html>
   );
