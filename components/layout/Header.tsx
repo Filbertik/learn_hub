@@ -1,4 +1,5 @@
 import Link from "next/link";
+import AuthActions from "@/components/auth/AuthActions";
 
 const Header = () => {
   return (
