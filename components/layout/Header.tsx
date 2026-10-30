@@ -38,8 +38,8 @@ const Header = () => {
           </Link>
 
           <Link
-            href="/register"
-            className="rounded-lg bg-indigo-600 px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-indigo-700"
+          // href="/register"
+          // className="rounded-lg bg-indigo-600 px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-indigo-700"
           >
             <AuthActions />
             Sign up
