@@ -30,9 +30,10 @@ const Header = () => {
 
         <div className="flex items-center gap-3">
           <Link
-            href="/login"
-            className="hidden text-sm font-medium text-slate-700 transition hover:text-indigo-600 sm:block"
+          // href="/login"
+          // className="hidden text-sm font-medium text-slate-700 transition hover:text-indigo-600 sm:block"
           >
+            <AuthActions />
             Log in
           </Link>
 
