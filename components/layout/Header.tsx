@@ -30,16 +30,16 @@ const Header = () => {
 
         <div className="flex items-center gap-3">
           <Link
-          // href="/login"
-          // className="hidden text-sm font-medium text-slate-700 transition hover:text-indigo-600 sm:block"
+            href="/login"
+            className="hidden text-sm font-medium text-slate-700 transition hover:text-indigo-600 sm:block"
           >
             <AuthActions />
             Log in
           </Link>
 
           <Link
-          // href="/register"
-          // className="rounded-lg bg-indigo-600 px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-indigo-700"
+            href="/register"
+            className="rounded-lg bg-indigo-600 px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-indigo-700"
           >
             <AuthActions />
             Sign up
