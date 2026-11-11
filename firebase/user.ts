@@ -19,4 +19,9 @@ export async function syncUserProfile(user: User): Promise<void> {
     email: user.email ?? "",
     updatedAt: serverTimestamp(),
   };
+
+  if (userSnapshot.exists()) {
+    await updateDoc(userRef, profileData);
+    return;
+  }
 }
