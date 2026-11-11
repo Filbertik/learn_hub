@@ -13,4 +13,10 @@ export async function syncUserProfile(user: User): Promise<void> {
   const userRef = doc(db, "users", user.uid);
 
   const userSnapshot = await getDoc(userRef);
+
+  const profileData = {
+    name: user.displayName ?? "",
+    email: user.email ?? "",
+    updatedAt: serverTimestamp(),
+  };
 }
