@@ -24,4 +24,10 @@ export async function syncUserProfile(user: User): Promise<void> {
     await updateDoc(userRef, profileData);
     return;
   }
+
+  await setDoc(userRef, {
+    uid: user.uid,
+    ...profileData,
+    createdAt: serverTimestamp(),
+  });
 }
