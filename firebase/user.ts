@@ -10,4 +10,7 @@ import type { User } from "firebase/auth";
 import { db } from "@/firebase/firestore";
 
 export async function syncUserProfile(user: User): Promise<void> {
- 
+  const userRef = doc(db, "users", user.uid);
+
+  const userSnapshot = await getDoc(userRef);
+}
