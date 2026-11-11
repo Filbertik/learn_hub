@@ -8,3 +8,6 @@ import {
 import type { User } from "firebase/auth";
 
 import { db } from "@/firebase/firestore";
+
+export async function syncUserProfile(user: User): Promise<void> {
+ 
