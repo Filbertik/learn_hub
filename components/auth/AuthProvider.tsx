@@ -19,15 +19,33 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(
       auth,
-      (currentUser) => {
+      async (currentUser) => {
         setUser(currentUser);
-        setIsLoading(false);
+
+        try {
+          if (currentUser) {
+            await syncUserProfile(currentUser);
+          }
+        } catch (error: unknown) {
+          console.error(
+            "Failed to synchronize user profile:",
+            error,
+          );
+        } finally {
+          setIsLoading(false);
+        }
       },
-      () => {
-        setUser(null);
-        setIsLoading(false);
-      },
-    );
+    // const unsubscribe = onAuthStateChanged(
+    //   auth,
+    //   (currentUser) => {
+    //     setUser(currentUser);
+    //     setIsLoading(false);
+    //   },
+    //   () => {
+    //     setUser(null);
+    //     setIsLoading(false);
+    //   },
+    // );
 
     return unsubscribe;
   }, []);
