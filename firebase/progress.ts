@@ -19,3 +19,9 @@ interface ToggleLessonCompletionParams {
   lessonId: string;
   totalLessons: number;
 }
+
+function calculateProgress(
+  completedLessons: string[],
+  totalLessons: number,
+): number {
+  
