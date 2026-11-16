@@ -12,3 +12,10 @@ export interface CourseProgress {
   completedLessons: string[];
   progress: number;
 }
+
+interface ToggleLessonCompletionParams {
+  userId: string;
+  courseId: string;
+  lessonId: string;
+  totalLessons: number;
+}
