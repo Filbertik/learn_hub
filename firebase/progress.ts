@@ -35,4 +35,8 @@ export async function getCourseProgress(
   userId: string,
   courseId: string,
 ): Promise<CourseProgress> {
-  
+  const progressRef = doc(db, "users", userId, "enrollments", courseId);
+
+  const progressSnapshot = await getDoc(progressRef);
+
+ 
