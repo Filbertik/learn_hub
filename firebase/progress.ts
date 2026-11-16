@@ -30,3 +30,9 @@ function calculateProgress(
 
   return Math.round((completedLessons.length / totalLessons) * 100);
 }
+
+export async function getCourseProgress(
+  userId: string,
+  courseId: string,
+): Promise<CourseProgress> {
+  
