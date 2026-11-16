@@ -6,3 +6,9 @@ import {
 } from "firebase/firestore";
 
 import { db } from "@/firebase/firestore";
+
+export interface CourseProgress {
+  courseId: string;
+  completedLessons: string[];
+  progress: number;
+}
