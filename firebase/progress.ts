@@ -54,3 +54,13 @@ export async function getCourseProgress(
         (lessonId): lessonId is string => typeof lessonId === "string",
       )
     : [];
+
+  return {
+    courseId,
+    completedLessons,
+    progress: calculateProgress(
+      completedLessons,
+      totalLessonsFromData(data, completedLessons),
+    ),
+  };
+}
