@@ -49,4 +49,8 @@ export async function getCourseProgress(
 
   const data = progressSnapshot.data();
 
-  
+  const completedLessons = Array.isArray(data.completedLessons)
+    ? data.completedLessons.filter(
+        (lessonId): lessonId is string => typeof lessonId === "string",
+      )
+    : [];
