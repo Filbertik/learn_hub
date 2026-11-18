@@ -47,4 +47,6 @@ export async function getCourseProgress(
     };
   }
 
+  const data = progressSnapshot.data();
+
   
