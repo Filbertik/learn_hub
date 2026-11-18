@@ -39,4 +39,12 @@ export async function getCourseProgress(
 
   const progressSnapshot = await getDoc(progressRef);
 
- 
+  if (!progressSnapshot.exists()) {
+    return {
+      courseId,
+      completedLessons: [],
+      progress: 0,
+    };
+  }
+
+  
