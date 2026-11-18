@@ -64,3 +64,9 @@ export async function getCourseProgress(
     ),
   };
 }
+
+function totalLessonsFromData(
+  data: Record<string, unknown>,
+  completedLessons: string[],
+): number {
+ 
