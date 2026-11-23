@@ -76,4 +76,5 @@ function totalLessonsFromData(
     savedProgress >= 0 &&
     savedProgress <= 100 &&
     completedLessons.length > 0
- 
+  ) {
+    // The actual percentage is recalculated by the caller
