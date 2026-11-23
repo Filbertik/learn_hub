@@ -73,4 +73,7 @@ function totalLessonsFromData(
 
   if (
     typeof savedProgress === "number" &&
+    savedProgress >= 0 &&
+    savedProgress <= 100 &&
+    completedLessons.length > 0
  
