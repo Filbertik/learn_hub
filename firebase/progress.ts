@@ -78,3 +78,5 @@ function totalLessonsFromData(
     completedLessons.length > 0
   ) {
     // The actual percentage is recalculated by the caller
+    // when the course lesson count is available.
+   
