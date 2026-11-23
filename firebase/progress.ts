@@ -69,4 +69,6 @@ function totalLessonsFromData(
   data: Record<string, unknown>,
   completedLessons: string[],
 ): number {
+  const savedProgress = data.progress;
+
  
