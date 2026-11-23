@@ -71,4 +71,6 @@ function totalLessonsFromData(
 ): number {
   const savedProgress = data.progress;
 
+  if (
+    typeof savedProgress === "number" &&
  
