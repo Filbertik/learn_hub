@@ -81,3 +81,6 @@ function totalLessonsFromData(
     // when the course lesson count is available.
     return completedLessons.length / (savedProgress / 100);
   }
+
+  return completedLessons.length;
+}
