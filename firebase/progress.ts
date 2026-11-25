@@ -80,4 +80,4 @@ function totalLessonsFromData(
     // The actual percentage is recalculated by the caller
     // when the course lesson count is available.
     return completedLessons.length / (savedProgress / 100);
-  
+  }
