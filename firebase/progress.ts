@@ -84,3 +84,9 @@ function totalLessonsFromData(
 
   return completedLessons.length;
 }
+
+export async function toggleLessonCompletion({
+  userId,
+  courseId,
+  lessonId,
+  totalLessons,
