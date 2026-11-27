@@ -90,3 +90,5 @@ export async function toggleLessonCompletion({
   courseId,
   lessonId,
   totalLessons,
+}: ToggleLessonCompletionParams): Promise<CourseProgress> {
+  const progressRef = doc(db, "users", userId, "enrollments", courseId);
